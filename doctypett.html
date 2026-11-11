@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Universo Sanrio: A História de Hello Kitty e Seus Amigos</title>
+    <style>
+        /* --- CONFIGURAÇÕES GERAIS --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #fff9fb;
+            color: #4a4a4a;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* --- TOPO / HEADER --- */
+        header {
+            background: linear-gradient(135deg, #ffdeeb 0%, #ffb6d3 100%);
+            color: #5c1d37;
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            box-shadow: 0 4px 15px rgba(255, 182, 211, 0.3);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-style: italic;
+        }
+
+        /* --- SEÇÃO HISTÓRIA --- */
+        .historia-section {
+            padding: 50px 0;
+        }
+
+        .historia-content {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+        }
+
+        .historia-content h2 {
+            color: #ff65a3;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .historia-content p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        /* --- SEÇÃO PERSONAGENS (GRID DE CARDS) --- */
+        .personagens-section {
+            padding: 30px 0 80px 0;
+        }
+
+        .personagens-section h2 {
+            text-align: center;
+            color: #4a4a4a;
+            margin-bottom: 40px;
+            font-size: 2rem;
+        }
+
+        .grid-personagens {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        /* --- CARD BASE --- */
+        .card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.04);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 20px;
+            text-align: center;
+            border: 2px solid transparent;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+        }
+
+        .card img {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            margin-bottom: 20px;
+            filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.05));
+        }
+
+        .card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        /* --- CORES PERSONALIZADAS POR CARD --- */
+        .card.kitty h3 { color: #e60012; }
+        .card.kitty:hover { border-color: #ffb6d3; }
+
+        .card.kuromi h3 { color: #6f42c1; }
+        .card.kuromi:hover { border-color: #e1bee7; }
+
+        .card.melody h3 { color: #ff69b4; }
+        .card.melody:hover { border-color: #ffc0cb; }
+
+        .card.cinnamon h3 { color: #00aeef; }
+        .card.cinnamon:hover { border-color: #b3e5fc; }
+
+        /* --- RODAPÉ --- */
+        footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        /* --- RESPONSIVIDADE --- */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            .historia-content { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CABEÇALHO DO SITE -->
+    <header>
+        <div class="container">
+            <h1>O Universo Sanrio: A História de Hello Kitty e Seus Amigos</h1>
+            <p>"Nunca se tem amigos demais!"</p>
+        </div>
+    </header>
+
+    <!-- SEÇÃO DA HISTÓRIA -->
+    <main class="container historia-section">
+        <article class="historia-content">
+            <h2>A Revolução do Kawaii</h2>
+            <p>Criada na década de 1970, a Hello Kitty deixou de ser apenas estampada em uma pequena carteira de moedas no Japão para se transformar em um império multibilionário, moldando o conceito global de fofura (o famoso estilo <em>kawaii</em>) e abrindo as portas para uma legião de personagens icônicos da empresa Sanrio.</p>
+            <p>Batizada oficialmente de Kitty White, a personagem teve sua biografia inspirada na cultura britânica. Um dos maiores segredos do seu sucesso está em seu design genial: ela não possui boca. Essa foi uma escolha artística intencional para que a Hello Kitty funcione como um espelho emocional para os fãs, falando diretamente com o coração de cada um.</p>
+        </article>
+    </main>
+
+    <!-- SEÇÃO DOS CARDS DOS PERSONAGENS -->
+    <section class="container personagens-section">
+        <h2>Conheça a Turma</h2>
+        
+        <div class="grid-personagens">
+            
+            <!-- CARD HELLO KITTY -->
+            <div class="card kitty">
+                <!-- Substitua o src pelo nome do arquivo da sua imagem PNG -->
+                <img src="hello_kitty.png" alt="Hello Kitty">
+                <h3>Hello Kitty</h3>
+                <p>Alegre, carinhosa e muito amigável. Adora assar biscoitos, tocar piano e seu sonho é seguir uma carreira artística.</p>
+            </div>
+
+            <!-- CARD KUROMI -->
+            <div class="card kuromi">
+                <img src="kuromi.png" alt="Kuromi">
+                <h3>Kuromi</h3>
+                <p>A rebelde de estilo punk com um guarda-chuva de bobo da corte. Ama escrever em seu diário, ler romances e andar de moto.</p>
+            </div>
+
+            <!-- CARD MY MELODY -->
+            <div class="card melody">
+                <img src="my_melody.png" alt="My Melody">
+                <h3>My Melody</h3>
+                <p>Extremamente doce, calma e gentil. Seu maior passatempo é fazer biscoitos com sua mãe e comer bolo de amêndoa.</p>
+            </div>
+
+            <!-- CARD CINNAMOROLL -->
+            <div class="card cinnamon">
+                <img src="cinnamoroll.png" alt="Cinnamoroll">
+                <h3>Cinnamoroll</h3>
+                <p>Um cachorrinho tímido que voa usando suas orelhas compridas. É o mascote oficial do Café Cinnamon e ama rolinhos de canela.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>&copy; 2026 - Fan site do Universo Sanrio. Feito com HTML e CSS.</p>
+    </footer>
+
+</body>
+</html>

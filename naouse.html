@@ -1,0 +1,192 @@
+<html>
+<head>
+<title>  Personagens and friends </title>
+<style>
+body
+{
+background:url("figurasite/aquarela.jpg") no-repeat center fixed;
+background-size:cover;
+color:pink;
+text-align:center;
+}
+
+h1
+{
+color:violet;	
+font-size:50px;
+font-weight:bold;
+text-shadow: 5px 5px 4px purple;
+}
+
+h2
+{
+color:violet;
+font-size:40px;
+text-shadow: 5px 5px 4px purple;
+font-weight:bold;
+}
+
+p
+{
+color:purple;
+font-size:30px;
+text-align:justify;
+}
+
+.boxed
+{	
+display:inline-block;
+border:2px  solid skyblue;
+max-width:800px;
+padding:15px 30px;
+border-radius:30px;
+margin:1px auto;
+background-color:rgba(0,0,0,0.5);
+line-height:1.5;
+}
+
+
+.figura, .figura1, .figura2
+{
+width: 180px;
+height: auto;
+border-radius:15%;
+opacity:1;
+margin: 10px;
+}
+
+
+@keyframes flutuar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+.figura[src*="hello_kitty"], .figura[src*="cinnamoroll"] {
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+@keyframes balancarKuromi {
+    0%, 100% { transform: scaleX(-1) rotate(0deg); }
+    25% { transform: scaleX(-1) rotate(-6deg); }
+    75% { transform: scaleX(-1) rotate(6deg); }
+}
+.figura1[src*="kuromi"] {
+    animation: balancarKuromi 2s ease-in-out infinite;
+}
+
+
+@keyframes pulsar {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+}
+.figura2[src*="my_melody"] {
+    animation: pulsar 2.5s ease-in-out infinite;
+}
+.figura1[src*="Pompompurin"] {
+    animation: pulsar 2.8s ease-in-out infinite;
+}
+
+
+@keyframes balancarLado {
+    0%, 100% { transform: scaleX(-1) rotate(0deg); }
+    25% { transform: scaleX(-1) rotate(-8deg); }
+    75% { transform: scaleX(-1) rotate(8deg); }
+}
+.figura1[src*="badtzmaru"], .figura1[src*="chocochoco"] {
+    animation: balancarLado 2.2s ease-in-out infinite;
+}
+
+
+@keyframes pular {
+    0%, 100% { transform: scaleX(-1) translateY(0); }
+    50% { transform: scaleX(-1) translateY(-15px); }
+}
+.figura1[src*="keroppi"] {
+    animation: pular 1.2s ease-in-out infinite;
+}
+
+
+.figura1
+{
+transform:scaleX(-1);
+}
+.figura2
+{
+transform:scaleX(-1);
+}
+
+</style>
+</head>
+<body>
+
+
+<h1> 
+    <marquee scrollamount="0" style="background-color: white; padding: 10px; border-radius: 20px; display: inline-block;"> 
+        Personagens Principais 🩷 
+    </marquee> 
+</h1> 
+
+<img class="figura" src="figurasite/hello_kitty.png" align="right">
+<hr color="purple">
+<p>
+De acordo com o perfil oficial da Sanrio, a Hello Kitty é uma garota alegre, carinhosa e com um coração de ouro. A sua principal characteristic é ser extremamente amigável e sociável, o que se resume perfeitamente no seu famoso lema oficial: "Nunca se tem amigos demais!".
+
+<img class="figura1" src="figurasite/kuromi.png" align="left">
+<br> <br>
+A Kuromi é o oposto da Hello Kitty: enquanto a Kitty é pura doçura, a Kuromi é uma coelhinha rebelde, cheia de atitude e com um estilo punk-tomboysh, mas que esconde um lado incrivelmente fofo e romântico por dentro. Ela foi criada em 2005 como a rival da My Melody.
+
+
+<img class="figura2" src="figurasite/my_melody.png" align="right">
+<br> <Br>
+
+ <br> <br> A My Melody é o símbolo máximo da doçura e da inocência no universo da Sanrio. Ela é uma coelhinha incrivelmente otimista, que sempre vê o lado bom de tudo e de todos (o que, às vezes, a torna um pouco ingênua). <br>
+A sua personalidade é o completo oposto da Kuromi: enquanto a Kuromi é intensa e rebelde, a My Melody é calma, paciente e extremamente educada. Ela valoriza muito a família e a amizade, sendo aquela amiga que faz de tudo para ver os outros felizes, valorizando muito os bons modos e a gentileza.
+
+
+<img class="figura" src="figurasite/cinnamoroll.png" align="right">
+<br> <br>
+
+O Cinnamoroll (cujo nome real é Cinnamon) é um dos personagens mais amados do universo da Sanrio. Ele é um cachorrinho branco, gordinho e tímido que nasceu em uma nuvem flutuante no céu e, um dia, flutuou até cair bem em frente ao Café Cinnamon.
+<br>
+Ele é facilmente reconhecido por seus olhos azuis marcantes, bochechas rosadas, orelhas longas e um rabinho encaracolado que se parece exatamente com um rolinho de canela (um cinnamon roll, o que deu origem ao seu nome).
+
+<img class="figura1" src="figurasite/Pompompurin.png" align="left">
+<br> <br>
+
+O Pompompurin (frequentemente chamado apenas de Purin) é um adorável cachorro da raça Golden Retriever. Ele é facilmente reconhecido por seu corpo rechonchudo cor de creme e pela sua marca registrada: uma boina marrom na cabeça, o que o faz parecer exatamente com um pudim de leite com calda de caramelo (purin significa pudim em japonês).
+Ele nasceu em um dia ensolarado de primavera (16 de abril) e vive na sua própria casinha de cachorro na entrada da casa de uma estudante que é a sua dona.
+
+
+<img class="figura1" src="figurasite/badtzmaru.png" align="right">
+<br> <br>
+
+O Badtz-Maru (frequentemente chamado de Bad Badtz-Maru) quebrou totalmente os padrões da Sanrio ao estrear in 1993 como o primeiro personagem "não legal" e rebelde da marca.<br>
+Ele é um pinguim preto com cabelos espetados, um bico amarelo proeminente e uma expressão clássica de desdém (geralmente puxando um dos olhos para baixo e mostrando a língua). Ele nasceu no dia 1º de abril (Dia da Mentira), o que combina perfeitamente com sua natureza brincalhona. 
+
+<img class="figura1" src="figurasite/keroppi.png" align="left">
+<br> <br>
+
+O Keroppi (cujo nome completo oficial é Kero Kero Keroppi) é um dos personagens masculinos mais clássicos e amados da Sanrio, lançado em 1988. Ele é um sapinho verde de olhos gigantescos e circulares, bochechas rosadas e uma boca em formato de "V".<br>
+Ele nasceu no dia 10 de julho em Donut Pond (Lago Donut), onde vive com seus pais e seus irmãos gêmeos (uma irmã chamada Pikki e um irmão chamado Koroppi) na Casa Kero Kero.
+	
+<br> <br>
+<img class="figura1" src="figurasite/chocochoco.png" align="right">
+ E o gatinho preto do universo da Sanrio chama-se Chococat! Ele foi lançado em 1996 e ganhou esse nome por causa do seu narizinho marrom, que lembra um pedacinho de chocolate. <br>
+Ele é um gato preto muito fofo, que não tem boca visível e usa sempre uma coleira ou cachecol azul brilhante no pescoço. Ele nasceu no dia 10 de maio e vive com seus pais em uma casinha aconchegante.
+</p>
+
+<h2> Vamos a Próxima Página?? 🩷 </h2>
+<br>
+
+<table border="0" width="100%" height="30%" align="left">
+	
+<tr>
+<th> <a href="kittyversehis.html"> <b> <font size="7"> A Historia 🩷 </font> </b> </a> </th>
+</tr>
+
+<tr>
+<th colspan="3"> Endereço / Contato / Redes Sociais </th>
+</tr>
+</table>
+
+</body>
+</html>
